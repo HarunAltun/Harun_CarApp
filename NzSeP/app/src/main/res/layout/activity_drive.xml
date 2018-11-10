@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:background = "#334D5C"
+
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/radiobutton_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/drive" />
+
+        <TextView
+            android:id="@+id/Target"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hauptmenue"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/hauptmenue"
+            android:layout_marginTop="50dp"
+            android:background="#91479164"
+            android:text="@string/C_ziel"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/Route_change"
+            android:layout_alignEnd="@+id/Route_change" />
+
+        <Button
+            android:id="@+id/Route_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioButton1"
+            android:layout_alignRight="@+id/radioButton1"
+            android:layout_below="@+id/Target"
+            android:text="@string/C_Route"
+            android:textAllCaps="false" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="27dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+
+            android:layout_alignBottom="@+id/radioButton1"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4"
+            android:background="#E27A3F"
+            android:text="@string/C_Stoppen" />
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+
+            android:layout_above="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:background="#E27A3F"
+            android:text="@string/C_Fahren" />
+
+        <TextView
+            android:id="@+id/Zustand_ID"
+            android:layout_width="100dp"
+
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/radioGroup"
+            android:layout_alignTop="@+id/radioButton2"
+
+
+
+            android:layout_marginLeft="22dp"
+            android:layout_marginStart="22dp"
+            android:layout_toRightOf="@+id/radioButton2"
+            android:background="#91479164"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Ziel_ID"
+            android:background="#91479164"
+
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:layout_alignEnd="@+id/imageView4"
+            android:layout_alignRight="@+id/imageView4"
+            android:layout_alignTop="@+id/Target" />
+
+        <Button
+            android:id="@+id/hauptmenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Route_change"
+            android:layout_alignRight="@+id/Route_change"
+            android:layout_below="@+id/Ziel_ID"
+            android:text="@string/C_Menü"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/Tanken_ID"
+            android:layout_width="80dp"
+
+            android:layout_height="40dp"
+            android:background="#45B29D"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/counter_ID"
+            android:layout_alignStart="@+id/counter_ID" />
+
+        <TextView
+            android:id="@+id/Füllstandview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_above="@+id/Tanken_ID"
+            android:background="#91479164"
+            android:text="@string/C_Füllstand"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/Tanken_ID"
+            android:layout_alignEnd="@+id/Tanken_ID"
+            android:layout_alignLeft="@+id/Tanken_ID"
+            android:layout_alignStart="@+id/Tanken_ID" />
+
+        <Button
+            android:id="@+id/buttonPLUS"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Tanken_ID"
+            android:layout_marginTop="29dp"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:text="+"
+            android:layout_alignRight="@+id/Ausgabe_klima"
+            android:layout_alignEnd="@+id/Ausgabe_klima" />
+
+        <TextView
+            android:id="@+id/Ausgabe_klima"
+            android:layout_width="50dp"
+
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/buttonMINUS"
+            android:layout_alignRight="@+id/buttonMINUS"
+            android:layout_below="@+id/buttonPLUS"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:background="#45B29D"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonMINUS"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Ausgabe_klima"
+            android:layout_toEndOf="@+id/radioGroup"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/Dauer_ID"
+            android:background="#91479164"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/C_Fahrzeit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/counter_ID"
+            android:layout_below="@+id/buttonPLUS" />
+
+        <TextView
+            android:id="@+id/counter_ID"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+
+            android:background="#45B29D"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_alignBottom="@+id/Dauer_ID"
+            android:layout_below="@+id/buttonPLUS" />
+
+        <TextView
+            android:id="@+id/Infotext_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/Dauer_ID"
+            android:layout_toRightOf="@+id/Dauer_ID"
+
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

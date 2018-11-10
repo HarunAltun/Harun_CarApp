@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NzSeP</string>
+    <string name="title_activity_start2">StartActivity2</string>
+    <string name="title_activity_routing">Routing</string>
+    <string name="C_ziel">Ziel</string>
+    <string name="C_Menü">HauptMenü</string>
+    <string name="C_Route">Route ändern</string>
+    <string name="C_Füllstand">Füllstand</string>
+    <string name="C_Fahrzeit">Fahrzeit</string>
+    <string name="C_Fahren">Fahren</string>
+    <string name="C_Stoppen">Stoppen</string>
+    <string name="C_Dauer">Dauer</string>
+    <string name="C_Auto_fährt">Auto fährt</string>
+
+    <string name="C_Tür_verriegeln">Tür verriegeln</string>
+    <string name="C_Tankanzeige">Tankanzeige</string>
+    <string name="C_Klimaanlage">Klimaanlage</string>
+    <string name="C_Route_Einstellung">Route Einstellung</string>
+    <string name="C_FahrzeugStart">FahrzeugStart</string>
+
+    <string name="C_Türen_bereit">Türen Bereit</string>
+    <string name="C_Tank_bereit">Tank Bereit</string>
+    <string name="C_Route_bereit">Route Bereit</string>
+    <string name="C_Fahrzeug_starten">Fahrzeug starten</string>
+
+
+    <string name="C_Füllstandin">Füllstand in %</string>
+
+
+    <string name="C_Alle_Türen">Alle Türen verriegeln/öffnen</string>
+    <string name="C_FahrerTür">Fahrertür</string>
+    <string name="C_Beifahrer">Beifahrer</string>
+    <string name="C_Hinten_links">Hinten Links</string>
+    <string name="C_Hinten_rechts">Hinten Rechts</string>
+    <string name="C_Kofferraum">Kofferraum</string>
+    <string name="C_Fahrzeug_Bereit">FB</string>
+
+
+</resources>

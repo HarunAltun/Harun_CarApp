@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NzSeP</string>
+    <string name="C_ziel">Target</string>
+    <string name="C_Menü">MainMenue</string>
+    <string name="C_Fahren">Drive</string>
+    <string name="C_Fahrzeit">Driving Time</string>
+    <string name="C_Füllstand">Fuel</string>
+    <string name="C_Route">Change Route</string>
+    <string name="C_Stoppen">Stopping</string>
+    <string name="C_Dauer">Duration</string>
+    <string name="C_Auto_fährt">Car is driving</string>
+    <string name="C_FahrzeugStart">Start Vehicle</string>
+    <string name="C_Klimaanlage">Air Conditioner</string>
+    <string name="C_Route_Einstellung">Route Configuration</string>
+    <string name="C_Tankanzeige">Display Tank</string>
+    <string name="C_Tür_verriegeln">Close Doors</string>
+    <string name="C_Fahrzeug_Bereit">BF</string>
+    <string name="C_Fahrzeug_starten">Start Vehicle</string>
+    <string name="C_Route_bereit">Route Ready</string>
+    <string name="C_Tank_bereit">Fuel ready</string>
+    <string name="C_Türen_bereit">Doors Ready</string>
+    <string name="C_Füllstandin">Fuel in %</string>
+    <string name="C_Alle_Türen">Closing/Open all Doors</string>
+    <string name="C_Beifahrer">Co Driver</string>
+    <string name="C_FahrerTür">Driver</string>
+    <string name="C_Hinten_links">Left Behind</string>
+    <string name="C_Hinten_rechts">Right Behind</string>
+    <string name="C_Kofferraum">Trunk</string>
+    <string name="title_activity_routing">routing2</string>
+    <string name="title_activity_start2">act2</string>
+</resources>

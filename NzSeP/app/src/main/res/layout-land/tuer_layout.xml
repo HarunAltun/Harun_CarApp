@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="match_parent"
+
+    android:background = "#334D5C"
+
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/tuer_verriegeln"
+            app:srcCompat="@drawable/tuer_verriegeln" />
+
+        <CheckBox
+            android:id="@+id/DriverDoor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="66dp"
+
+            android:background="#E27A3F"
+            android:text="@string/C_FahrerTür"
+            android:textStyle="bold"
+            android:layout_below="@+id/AllDoors"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView" />
+
+        <CheckBox
+            android:id="@+id/Co_Driver_door"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/DriverDoor"
+            android:layout_alignTop="@+id/DriverDoor"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+
+            android:background="#E27A3F"
+            android:text="@string/C_Beifahrer"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Left_behindD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#E27A3F"
+            android:text="@string/C_Hinten_links"
+            android:textStyle="bold"
+            android:layout_above="@+id/Kofferaum_ID"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView" />
+
+        <CheckBox
+            android:id="@+id/Right_behindD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="#E27A3F"
+            android:text="@string/C_Hinten_rechts"
+            android:textStyle="bold"
+            android:layout_above="@+id/Kofferaum_ID"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView" />
+
+        <CheckBox
+            android:id="@+id/AllDoors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="14dp"
+
+            android:background="#E27A3F"
+            android:text="@string/C_Alle_Türen"
+            android:textStyle="bold"
+            android:layout_alignRight="@+id/imageView"
+            android:layout_alignEnd="@+id/imageView"
+            android:layout_alignLeft="@+id/imageView"
+            android:layout_alignStart="@+id/imageView" />
+
+        <CheckBox
+            android:id="@+id/Kofferaum_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:background="#E27A3F"
+            android:text="@string/C_Kofferraum"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background = "#334D5C"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        >
+        <CheckBox
+            android:id="@+id/Tuer_ID"
+
+            android:background="#E27A3F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="36dp"
+            android:text="@string/C_Türen_bereit"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/Tank_Id"
+
+            android:background="#E27A3F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/C_Tank_bereit"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/Tuer_ID"
+            android:layout_alignBottom="@+id/Tuer_ID"
+            android:layout_toRightOf="@+id/Tuer_ID"
+            android:layout_toEndOf="@+id/Tuer_ID" />
+
+        <CheckBox
+            android:id="@+id/Route_ID"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/Tank_Id"
+            android:layout_toEndOf="@+id/Tank_Id"
+            android:layout_toRightOf="@+id/Tank_Id"
+            android:background="#E27A3F"
+            android:text="@string/C_Route_bereit"
+            android:textAllCaps="true"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Tuer_ID"
+            android:layout_marginTop="24dp"
+            android:text="__________________________________________"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:src="@drawable/car_front"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/car_front" />
+
+        <Button
+            android:id="@+id/Startbutton_ID"
+            android:background="#E27A3F"
+            android:layout_width="199dp"
+            android:layout_height="100dp"
+            android:text="@string/C_Fahrzeug_starten"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/Aktiv_ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Route_ID"
+            android:layout_alignRight="@+id/Route_ID"
+            android:layout_alignTop="@+id/Startbutton_ID"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/Startbutton_ID"
+            android:textAllCaps="true"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
